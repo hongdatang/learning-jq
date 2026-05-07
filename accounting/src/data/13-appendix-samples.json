@@ -1,0 +1,24 @@
+{
+  "strings": {
+    "hello": "Hello, World!",
+    "html_unsafe": "<script>alert('xss')</script>",
+    "path": "/usr/local/bin/jq",
+    "csv_line": "Alice,30,Engineering"
+  },
+  "numbers": {
+    "pi": 3.14159,
+    "negative": -42,
+    "zero": 0,
+    "large": 1e308
+  },
+  "arrays": {
+    "sorted": [1, 3, 5, 7, 9, 11, 13],
+    "colors": ["red", "green", "blue"],
+    "sizes": ["S", "M", "L"],
+    "matrix": [[1, 2], [3, 4], [5, 6]]
+  },
+  "nested": {
+    "a": { "b": { "c": 42 } },
+    "x": [1, [2, [3]]]
+  }
+}

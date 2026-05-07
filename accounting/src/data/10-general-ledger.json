@@ -1,0 +1,180 @@
+{
+  "period": "2024-06",
+  "period_end": "2024-06-30",
+  "description": "Full general ledger for June 2024 -- contains deliberate errors for validation exercises",
+  "ledger": [
+    {
+      "code": "1000",
+      "name": "Cash",
+      "normal_balance": "debit",
+      "entries": [
+        { "date": "2024-06-01", "description": "Owner investment",              "debit": 50.00, "credit": 0 },
+        { "date": "2024-06-01", "description": "Buy lemons",                    "debit": 0,     "credit": 6.00 },
+        { "date": "2024-06-01", "description": "Buy sugar",                     "debit": 0,     "credit": 3.00 },
+        { "date": "2024-06-01", "description": "Buy cups",                      "debit": 0,     "credit": 1.00 },
+        { "date": "2024-06-01", "description": "Cardboard sign",                "debit": 0,     "credit": 2.00 },
+        { "date": "2024-06-01", "description": "Week 1 cash sales",             "debit": 21.00, "credit": 0 },
+        { "date": "2024-06-03", "description": "Pay friend for Monday help",    "debit": 0,     "credit": 3.00 },
+        { "date": "2024-06-08", "description": "Bank loan received",            "debit": 50.00, "credit": 0 },
+        { "date": "2024-06-08", "description": "Buy lemonade stand",            "debit": 0,     "credit": 40.00 },
+        { "date": "2024-06-09", "description": "Buy insurance (3 months)",      "debit": 0,     "credit": 12.00 },
+        { "date": "2024-06-09", "description": "Buy supplies for week 2",       "debit": 0,     "credit": 15.00 },
+        { "date": "2024-06-10", "description": "Week 2 cash sales",             "debit": 25.00, "credit": 0 },
+        { "date": "2024-06-12", "description": "Pay interest on loan",          "debit": 0,     "credit": 2.00 }
+      ]
+    },
+    {
+      "code": "1100",
+      "name": "Accounts Receivable",
+      "normal_balance": "debit",
+      "entries": [
+        { "date": "2024-06-11", "description": "Credit sale to neighbor",       "debit": 5.00,  "credit": 0 },
+        { "date": "2024-06-30", "description": "Write off uncollectible",       "debit": 0,     "credit": 5.00 }
+      ]
+    },
+    {
+      "code": "1200",
+      "name": "Inventory",
+      "normal_balance": "debit",
+      "entries": [
+        { "date": "2024-06-01", "description": "Lemons purchased",              "debit": 6.00,  "credit": 0 },
+        { "date": "2024-06-01", "description": "Sugar purchased",               "debit": 3.00,  "credit": 0 },
+        { "date": "2024-06-01", "description": "Cups purchased",                "debit": 1.00,  "credit": 0 },
+        { "date": "2024-06-05", "description": "Week 1 COGS",                   "debit": 0,     "credit": 10.00 },
+        { "date": "2024-06-09", "description": "Supplies for week 2",           "debit": 15.00, "credit": 0 },
+        { "date": "2024-06-12", "description": "Week 2 COGS",                   "debit": 0,     "credit": 15.00 }
+      ]
+    },
+    {
+      "code": "1300",
+      "name": "Prepaid Insurance",
+      "normal_balance": "debit",
+      "entries": [
+        { "date": "2024-06-09", "description": "3-month policy purchased",      "debit": 12.00, "credit": 0 },
+        { "date": "2024-06-30", "description": "June portion expired",          "debit": 0,     "credit": 4.00 }
+      ]
+    },
+    {
+      "code": "1400",
+      "name": "Equipment",
+      "normal_balance": "debit",
+      "entries": [
+        { "date": "2024-06-08", "description": "Lemonade stand purchased",      "debit": 40.00, "credit": 0 }
+      ]
+    },
+    {
+      "code": "1410",
+      "name": "Accumulated Depreciation",
+      "normal_balance": "credit",
+      "entries": [
+        { "date": "2024-06-30", "description": "June depreciation",             "debit": 0,     "credit": 4.00 }
+      ]
+    },
+    {
+      "code": "2100",
+      "name": "Notes Payable",
+      "normal_balance": "credit",
+      "entries": [
+        { "date": "2024-06-08", "description": "Bank loan",                     "debit": 0,     "credit": 50.00 }
+      ]
+    },
+    {
+      "code": "3000",
+      "name": "Owner's Equity",
+      "normal_balance": "credit",
+      "entries": [
+        { "date": "2024-06-01", "description": "Initial investment",            "debit": 0,     "credit": 50.00 }
+      ]
+    },
+    {
+      "code": "3100",
+      "name": "Retained Earnings",
+      "normal_balance": "credit",
+      "entries": []
+    },
+    {
+      "code": "4000",
+      "name": "Revenue",
+      "normal_balance": "credit",
+      "entries": [
+        { "date": "2024-06-01", "description": "Week 1 cash sales",             "debit": 0,     "credit": 21.00 },
+        { "date": "2024-06-10", "description": "Week 2 cash sales",             "debit": 0,     "credit": 25.00 },
+        { "date": "2024-06-11", "description": "Credit sale to neighbor",       "debit": 0,     "credit": 5.00 }
+      ]
+    },
+    {
+      "code": "5000",
+      "name": "Cost of Goods Sold",
+      "normal_balance": "debit",
+      "entries": [
+        { "date": "2024-06-05", "description": "Week 1 supplies used",          "debit": 10.00, "credit": 0 },
+        { "date": "2024-06-12", "description": "Week 2 supplies used",          "debit": 15.00, "credit": 0 }
+      ]
+    },
+    {
+      "code": "6000",
+      "name": "Wages Expense",
+      "normal_balance": "debit",
+      "entries": [
+        { "date": "2024-06-03", "description": "Friend helped Monday",          "debit": 3.00,  "credit": 0 }
+      ]
+    },
+    {
+      "code": "6100",
+      "name": "Advertising Expense",
+      "normal_balance": "debit",
+      "entries": [
+        { "date": "2024-06-01", "description": "Cardboard sign for stand",      "debit": 2.00,  "credit": 0 }
+      ]
+    },
+    {
+      "code": "6200",
+      "name": "Insurance Expense",
+      "normal_balance": "debit",
+      "entries": [
+        { "date": "2024-06-30", "description": "June insurance expired",        "debit": 4.00,  "credit": 0 }
+      ]
+    },
+    {
+      "code": "6300",
+      "name": "Depreciation Expense",
+      "normal_balance": "debit",
+      "entries": [
+        { "date": "2024-06-30", "description": "June depreciation on stand",    "debit": 4.00,  "credit": 0 }
+      ]
+    },
+    {
+      "code": "6400",
+      "name": "Bad Debt Expense",
+      "normal_balance": "debit",
+      "entries": [
+        { "date": "2024-06-30", "description": "Neighbor moved away",           "debit": 5.00,  "credit": 0 }
+      ]
+    },
+    {
+      "code": "6500",
+      "name": "Interest Expense",
+      "normal_balance": "debit",
+      "entries": [
+        { "date": "2024-06-12", "description": "June interest on bank loan",    "debit": 2.00,  "credit": 0 }
+      ]
+    },
+
+    {
+      "code": "9999",
+      "name": "Suspense",
+      "normal_balance": "debit",
+      "entries": [
+        { "date": "2024-06-15", "description": "Unknown charge",                "debit": 31.00, "credit": 0 }
+      ]
+    },
+    {
+      "code": "1000",
+      "name": "cash",
+      "normal_balance": "debit",
+      "entries": [
+        { "date": "2024-06-20", "description": "",                              "debit": 0,     "credit": 13.00 }
+      ]
+    }
+  ]
+}

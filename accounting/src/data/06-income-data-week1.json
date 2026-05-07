@@ -1,0 +1,22 @@
+{
+  "period": "Week 1",
+  "start_date": "2024-06-01",
+  "end_date": "2024-06-05",
+  "sales": [
+    { "date": "2024-06-01", "cups": 5,  "unit_price": 1.00, "revenue": 5.00 },
+    { "date": "2024-06-02", "cups": 8,  "unit_price": 1.00, "revenue": 8.00 },
+    { "date": "2024-06-03", "cups": 3,  "unit_price": 1.00, "revenue": 3.00 },
+    { "date": "2024-06-03", "cups": 2,  "unit_price": 1.50, "revenue": 3.00 },
+    { "date": "2024-06-04", "cups": 2,  "unit_price": 1.00, "revenue": 2.00 },
+    { "date": "2024-06-05", "cups": 1,  "unit_price": 1.00, "revenue": 1.00 }
+  ],
+  "cost_of_goods": {
+    "cups_sold": 21,
+    "cost_per_cup": 0.50,
+    "total_cogs": 10.00
+  },
+  "expenses": [
+    { "category": "Wages",       "description": "Friend helped Monday", "amount": 3.00 },
+    { "category": "Advertising", "description": "Cardboard sign",       "amount": 2.00 }
+  ]
+}

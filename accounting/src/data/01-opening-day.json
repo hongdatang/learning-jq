@@ -1,0 +1,25 @@
+{
+  "business": "Lemonade Stand",
+  "owner": "You",
+  "date": "2024-06-01",
+  "chart_of_accounts": {
+    "assets": ["Cash"],
+    "liabilities": [],
+    "equity": ["Owner's Equity"]
+  },
+  "transactions": [
+    {
+      "id": 1,
+      "date": "2024-06-01",
+      "description": "Owner investment - saved from chores",
+      "type": "investment",
+      "account": "Cash",
+      "amount": 50.00
+    }
+  ],
+  "balance_sheet": {
+    "assets": { "cash": 50.00 },
+    "liabilities": {},
+    "owners_equity": { "invested_capital": 50.00 }
+  }
+}

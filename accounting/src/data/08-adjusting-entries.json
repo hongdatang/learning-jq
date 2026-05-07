@@ -1,0 +1,64 @@
+{
+  "period_end": "2024-06-30",
+  "pre_adjustment_balances": {
+    "cash": 62.00,
+    "accounts_receivable": 5.00,
+    "inventory": 0.00,
+    "prepaid_insurance": 12.00,
+    "equipment": 40.00,
+    "accumulated_depreciation": 0.00,
+    "notes_payable": 50.00,
+    "owners_equity": 50.00,
+    "retained_earnings": 19.00
+  },
+  "adjusting_entries": [
+    {
+      "id": "ADJ-001",
+      "type": "depreciation",
+      "description": "Monthly depreciation on lemonade stand",
+      "asset": "equipment",
+      "useful_life_months": 10,
+      "original_cost": 40.00,
+      "monthly_amount": 4.00,
+      "debit": { "account": "depreciation_expense", "amount": 4.00 },
+      "credit": { "account": "accumulated_depreciation", "amount": 4.00 }
+    },
+    {
+      "id": "ADJ-002",
+      "type": "prepaid_expense",
+      "description": "June portion of 3-month insurance",
+      "total_prepaid": 12.00,
+      "months_covered": 3,
+      "monthly_amount": 4.00,
+      "debit": { "account": "insurance_expense", "amount": 4.00 },
+      "credit": { "account": "prepaid_insurance", "amount": 4.00 }
+    },
+    {
+      "id": "ADJ-003",
+      "type": "bad_debt",
+      "description": "Neighbor moved away - uncollectible receivable",
+      "customer": "Neighbor kid",
+      "original_amount": 5.00,
+      "debit": { "account": "bad_debt_expense", "amount": 5.00 },
+      "credit": { "account": "accounts_receivable", "amount": 5.00 }
+    }
+  ],
+  "depreciation_schedule": {
+    "asset": "Lemonade Stand",
+    "cost": 40.00,
+    "useful_life_months": 10,
+    "monthly_depreciation": 4.00,
+    "schedule": [
+      { "month": 1, "expense": 4.00, "accumulated": 4.00,  "book_value": 36.00 },
+      { "month": 2, "expense": 4.00, "accumulated": 8.00,  "book_value": 32.00 },
+      { "month": 3, "expense": 4.00, "accumulated": 12.00, "book_value": 28.00 },
+      { "month": 4, "expense": 4.00, "accumulated": 16.00, "book_value": 24.00 },
+      { "month": 5, "expense": 4.00, "accumulated": 20.00, "book_value": 20.00 },
+      { "month": 6, "expense": 4.00, "accumulated": 24.00, "book_value": 16.00 },
+      { "month": 7, "expense": 4.00, "accumulated": 28.00, "book_value": 12.00 },
+      { "month": 8, "expense": 4.00, "accumulated": 32.00, "book_value": 8.00 },
+      { "month": 9, "expense": 4.00, "accumulated": 36.00, "book_value": 4.00 },
+      { "month": 10, "expense": 4.00, "accumulated": 40.00, "book_value": 0.00 }
+    ]
+  }
+}

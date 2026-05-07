@@ -1,0 +1,41 @@
+{
+  "business": "Lemonade Stand",
+  "week": 1,
+  "period": "2024-06-01 to 2024-06-05",
+  "starting_balances": {
+    "cash": 40.00,
+    "inventory": 10.00,
+    "owners_equity": 50.00
+  },
+  "sales": [
+    { "id":  1, "date": "2024-06-01", "customer": "walk-in",       "quantity": 2, "unit_price": 1.00, "total":  2.00 },
+    { "id":  2, "date": "2024-06-01", "customer": "Mrs. Henderson", "quantity": 1, "unit_price": 1.00, "total":  1.00 },
+    { "id":  3, "date": "2024-06-01", "customer": "walk-in",       "quantity": 2, "unit_price": 1.00, "total":  2.00 },
+    { "id":  4, "date": "2024-06-02", "customer": "walk-in",       "quantity": 3, "unit_price": 1.00, "total":  3.00 },
+    { "id":  5, "date": "2024-06-02", "customer": "Mr. Park",      "quantity": 2, "unit_price": 1.00, "total":  2.00 },
+    { "id":  6, "date": "2024-06-02", "customer": "walk-in",       "quantity": 1, "unit_price": 1.00, "total":  1.00 },
+    { "id":  7, "date": "2024-06-02", "customer": "walk-in",       "quantity": 2, "unit_price": 1.00, "total":  2.00 },
+    { "id":  8, "date": "2024-06-03", "customer": "walk-in",       "quantity": 1, "unit_price": 1.00, "total":  1.00 },
+    { "id":  9, "date": "2024-06-03", "customer": "Coach Davis",   "quantity": 2, "unit_price": 1.00, "total":  2.00 },
+    { "id": 10, "date": "2024-06-03", "customer": "walk-in",       "quantity": 2, "unit_price": 1.50, "total":  3.00 },
+    { "id": 11, "date": "2024-06-04", "customer": "walk-in",       "quantity": 1, "unit_price": 1.00, "total":  1.00 },
+    { "id": 12, "date": "2024-06-04", "customer": "Mrs. Henderson", "quantity": 1, "unit_price": 1.00, "total":  1.00 },
+    { "id": 13, "date": "2024-06-05", "customer": "walk-in",       "quantity": 1, "unit_price": 1.00, "total":  1.00 }
+  ],
+  "summary": {
+    "by_day": [
+      { "date": "2024-06-01", "day": "Saturday", "cups_sold":  5, "revenue":  5.00 },
+      { "date": "2024-06-02", "day": "Sunday",   "cups_sold":  8, "revenue":  8.00 },
+      { "date": "2024-06-03", "day": "Monday",   "cups_sold":  5, "revenue":  6.00 },
+      { "date": "2024-06-04", "day": "Tuesday",  "cups_sold":  2, "revenue":  2.00 },
+      { "date": "2024-06-05", "day": "Wednesday","cups_sold":  1, "revenue":  1.00 }
+    ],
+    "totals": {
+      "cups_sold": 21,
+      "revenue": 22.00,
+      "cost_of_goods_sold": 9.50,
+      "gross_profit": 12.50,
+      "inventory_remaining": 0.50
+    }
+  }
+}

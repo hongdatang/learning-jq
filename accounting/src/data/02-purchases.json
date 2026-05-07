@@ -1,0 +1,21 @@
+{
+  "date": "2024-06-01",
+  "starting_cash": 50.00,
+  "purchases": [
+    { "item": "Lemons",  "quantity": 12, "unit_price": 0.50, "total": 6.00, "category": "inventory" },
+    { "item": "Sugar",   "quantity": 2,  "unit_price": 1.50, "total": 3.00, "category": "inventory" },
+    { "item": "Cups",    "quantity": 20, "unit_price": 0.05, "total": 1.00, "category": "inventory" }
+  ],
+  "balance_sheet": {
+    "assets": {
+      "cash": 40.00,
+      "inventory": {
+        "lemons": 6.00,
+        "sugar": 3.00,
+        "cups": 1.00
+      }
+    },
+    "liabilities": {},
+    "owners_equity": { "invested_capital": 50.00 }
+  }
+}

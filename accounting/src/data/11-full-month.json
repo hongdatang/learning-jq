@@ -1,0 +1,286 @@
+{
+  "period": "June 2024",
+  "business": "Lemonade Stand",
+  "start_date": "2024-06-01",
+  "end_date": "2024-06-30",
+  "chart_of_accounts": [
+    { "code": "1000", "name": "Cash",                    "type": "asset",     "category": "current" },
+    { "code": "1100", "name": "Accounts Receivable",      "type": "asset",     "category": "current" },
+    { "code": "1200", "name": "Inventory - Lemons",       "type": "asset",     "category": "current" },
+    { "code": "1210", "name": "Inventory - Sugar",        "type": "asset",     "category": "current" },
+    { "code": "1220", "name": "Inventory - Cups",         "type": "asset",     "category": "current" },
+    { "code": "1300", "name": "Prepaid Insurance",        "type": "asset",     "category": "current" },
+    { "code": "1400", "name": "Equipment",                "type": "asset",     "category": "fixed" },
+    { "code": "1410", "name": "Accumulated Depreciation", "type": "asset",     "category": "contra" },
+    { "code": "2000", "name": "Accounts Payable",         "type": "liability", "category": "current" },
+    { "code": "2100", "name": "Notes Payable",            "type": "liability", "category": "current" },
+    { "code": "3000", "name": "Owner's Equity",           "type": "equity",    "category": "equity" },
+    { "code": "3100", "name": "Retained Earnings",        "type": "equity",    "category": "equity" },
+    { "code": "4000", "name": "Sales Revenue",            "type": "revenue",   "category": "operating" },
+    { "code": "5000", "name": "Cost of Goods Sold",       "type": "expense",   "category": "operating" },
+    { "code": "6000", "name": "Wages Expense",            "type": "expense",   "category": "operating" },
+    { "code": "6100", "name": "Advertising Expense",      "type": "expense",   "category": "operating" },
+    { "code": "6200", "name": "Insurance Expense",        "type": "expense",   "category": "operating" },
+    { "code": "6300", "name": "Depreciation Expense",     "type": "expense",   "category": "operating" },
+    { "code": "6400", "name": "Bad Debt Expense",         "type": "expense",   "category": "operating" },
+    { "code": "6500", "name": "Interest Expense",         "type": "expense",   "category": "operating" }
+  ],
+  "transactions": [
+    {
+      "id": 1, "date": "2024-06-01", "description": "Owner investment - saved from chores",
+      "debit":  { "account": "1000", "amount": 50.00 },
+      "credit": { "account": "3000", "amount": 50.00 },
+      "tags": ["financing"]
+    },
+    {
+      "id": 2, "date": "2024-06-01", "description": "Buy lemons (5 lbs)",
+      "debit":  { "account": "1200", "amount": 6.00 },
+      "credit": { "account": "1000", "amount": 6.00 },
+      "tags": ["operating"]
+    },
+    {
+      "id": 3, "date": "2024-06-01", "description": "Buy sugar (2 lbs)",
+      "debit":  { "account": "1210", "amount": 3.00 },
+      "credit": { "account": "1000", "amount": 3.00 },
+      "tags": ["operating"]
+    },
+    {
+      "id": 4, "date": "2024-06-01", "description": "Buy paper cups (50-pack)",
+      "debit":  { "account": "1220", "amount": 1.00 },
+      "credit": { "account": "1000", "amount": 1.00 },
+      "tags": ["operating"]
+    },
+    {
+      "id": 5, "date": "2024-06-01", "description": "Cardboard sign for advertising",
+      "debit":  { "account": "6100", "amount": 2.00 },
+      "credit": { "account": "1000", "amount": 2.00 },
+      "tags": ["operating"]
+    },
+    {
+      "id": 6, "date": "2024-06-01", "description": "Cash sales - 5 cups",
+      "debit":  { "account": "1000", "amount": 5.00 },
+      "credit": { "account": "4000", "amount": 5.00 },
+      "tags": ["operating"]
+    },
+    {
+      "id": 7, "date": "2024-06-02", "description": "Cash sales - 8 cups",
+      "debit":  { "account": "1000", "amount": 8.00 },
+      "credit": { "account": "4000", "amount": 8.00 },
+      "tags": ["operating"]
+    },
+    {
+      "id": 8, "date": "2024-06-03", "description": "Paid friend for helping Monday",
+      "debit":  { "account": "6000", "amount": 3.00 },
+      "credit": { "account": "1000", "amount": 3.00 },
+      "tags": ["operating"]
+    },
+    {
+      "id": 9, "date": "2024-06-03", "description": "Cash sales - 5 cups (includes 2 premium)",
+      "debit":  { "account": "1000", "amount": 6.00 },
+      "credit": { "account": "4000", "amount": 6.00 },
+      "tags": ["operating"]
+    },
+    {
+      "id": 10, "date": "2024-06-04", "description": "Cash sales - 2 cups",
+      "debit":  { "account": "1000", "amount": 2.00 },
+      "credit": { "account": "4000", "amount": 2.00 },
+      "tags": ["operating"]
+    },
+    {
+      "id": 11, "date": "2024-06-05", "description": "Record COGS - lemons used Week 1",
+      "debit":  { "account": "5000", "amount": 4.00 },
+      "credit": { "account": "1200", "amount": 4.00 },
+      "tags": ["operating"]
+    },
+    {
+      "id": 12, "date": "2024-06-05", "description": "Record COGS - sugar used Week 1",
+      "debit":  { "account": "5000", "amount": 3.00 },
+      "credit": { "account": "1210", "amount": 3.00 },
+      "tags": ["operating"]
+    },
+    {
+      "id": 13, "date": "2024-06-05", "description": "Record COGS - cups used Week 1",
+      "debit":  { "account": "5000", "amount": 1.00 },
+      "credit": { "account": "1220", "amount": 1.00 },
+      "tags": ["operating"]
+    },
+    {
+      "id": 14, "date": "2024-06-08", "description": "Bank loan for expansion",
+      "debit":  { "account": "1000", "amount": 50.00 },
+      "credit": { "account": "2100", "amount": 50.00 },
+      "tags": ["financing"]
+    },
+    {
+      "id": 15, "date": "2024-06-08", "description": "Buy lemonade stand (equipment)",
+      "debit":  { "account": "1400", "amount": 40.00 },
+      "credit": { "account": "1000", "amount": 40.00 },
+      "tags": ["investing"]
+    },
+    {
+      "id": 16, "date": "2024-06-09", "description": "Buy insurance (3-month policy)",
+      "debit":  { "account": "1300", "amount": 12.00 },
+      "credit": { "account": "1000", "amount": 12.00 },
+      "tags": ["operating"]
+    },
+    {
+      "id": 17, "date": "2024-06-09", "description": "Buy supplies for Week 2",
+      "debit":  { "account": "1200", "amount": 15.00 },
+      "credit": { "account": "1000", "amount": 15.00 },
+      "tags": ["operating"]
+    },
+    {
+      "id": 18, "date": "2024-06-10", "description": "Cash sales - 25 cups",
+      "debit":  { "account": "1000", "amount": 25.00 },
+      "credit": { "account": "4000", "amount": 25.00 },
+      "tags": ["operating"]
+    },
+    {
+      "id": 19, "date": "2024-06-11", "description": "Credit sale to neighbor - 5 cups",
+      "debit":  { "account": "1100", "amount": 5.00 },
+      "credit": { "account": "4000", "amount": 5.00 },
+      "tags": ["operating"]
+    },
+    {
+      "id": 20, "date": "2024-06-11", "description": "Record COGS for Week 2 (30 cups x $0.50)",
+      "debit":  { "account": "5000", "amount": 15.00 },
+      "credit": { "account": "1200", "amount": 15.00 },
+      "tags": ["operating"]
+    },
+    {
+      "id": 21, "date": "2024-06-12", "description": "Pay interest on bank loan",
+      "debit":  { "account": "6500", "amount": 2.00 },
+      "credit": { "account": "1000", "amount": 2.00 },
+      "tags": ["operating"]
+    },
+    {
+      "id": 22, "date": "2024-06-30", "description": "Adjusting: monthly depreciation on stand",
+      "debit":  { "account": "6300", "amount": 4.00 },
+      "credit": { "account": "1410", "amount": 4.00 },
+      "tags": ["adjusting"]
+    },
+    {
+      "id": 23, "date": "2024-06-30", "description": "Adjusting: June portion of insurance",
+      "debit":  { "account": "6200", "amount": 4.00 },
+      "credit": { "account": "1300", "amount": 4.00 },
+      "tags": ["adjusting"]
+    },
+    {
+      "id": 24, "date": "2024-06-30", "description": "Adjusting: write off uncollectible receivable",
+      "debit":  { "account": "6400", "amount": 5.00 },
+      "credit": { "account": "1100", "amount": 5.00 },
+      "tags": ["adjusting"]
+    },
+    {
+      "id": 25, "date": "2024-06-30", "description": "Closing: transfer revenue to retained earnings",
+      "debit":  { "account": "4000", "amount": 51.00 },
+      "credit": { "account": "3100", "amount": 51.00 },
+      "tags": ["closing"]
+    },
+    {
+      "id": 26, "date": "2024-06-30", "description": "Closing: transfer COGS to retained earnings",
+      "debit":  { "account": "3100", "amount": 25.00 },
+      "credit": { "account": "5000", "amount": 25.00 },
+      "tags": ["closing"]
+    },
+    {
+      "id": 27, "date": "2024-06-30", "description": "Closing: transfer wages expense to retained earnings",
+      "debit":  { "account": "3100", "amount": 3.00 },
+      "credit": { "account": "6000", "amount": 3.00 },
+      "tags": ["closing"]
+    },
+    {
+      "id": 28, "date": "2024-06-30", "description": "Closing: transfer advertising expense to retained earnings",
+      "debit":  { "account": "3100", "amount": 2.00 },
+      "credit": { "account": "6100", "amount": 2.00 },
+      "tags": ["closing"]
+    },
+    {
+      "id": 29, "date": "2024-06-30", "description": "Closing: transfer insurance expense to retained earnings",
+      "debit":  { "account": "3100", "amount": 4.00 },
+      "credit": { "account": "6200", "amount": 4.00 },
+      "tags": ["closing"]
+    },
+    {
+      "id": 30, "date": "2024-06-30", "description": "Closing: transfer depreciation expense to retained earnings",
+      "debit":  { "account": "3100", "amount": 4.00 },
+      "credit": { "account": "6300", "amount": 4.00 },
+      "tags": ["closing"]
+    },
+    {
+      "id": 31, "date": "2024-06-30", "description": "Closing: transfer bad debt expense to retained earnings",
+      "debit":  { "account": "3100", "amount": 5.00 },
+      "credit": { "account": "6400", "amount": 5.00 },
+      "tags": ["closing"]
+    },
+    {
+      "id": 32, "date": "2024-06-30", "description": "Closing: transfer interest expense to retained earnings",
+      "debit":  { "account": "3100", "amount": 2.00 },
+      "credit": { "account": "6500", "amount": 2.00 },
+      "tags": ["closing"]
+    }
+  ],
+  "account_balances": {
+    "1000": 62.00,
+    "1100": 0.00,
+    "1200": 0.00,
+    "1210": 0.00,
+    "1220": 0.00,
+    "1300": 8.00,
+    "1400": 40.00,
+    "1410": -4.00,
+    "2000": 0.00,
+    "2100": 50.00,
+    "3000": 50.00,
+    "3100": 6.00,
+    "4000": 0.00,
+    "5000": 0.00,
+    "6000": 0.00,
+    "6100": 0.00,
+    "6200": 0.00,
+    "6300": 0.00,
+    "6400": 0.00,
+    "6500": 0.00
+  },
+  "pre_closing_balances": {
+    "1000": 62.00,
+    "1100": 0.00,
+    "1200": 0.00,
+    "1210": 0.00,
+    "1220": 0.00,
+    "1300": 8.00,
+    "1400": 40.00,
+    "1410": -4.00,
+    "2000": 0.00,
+    "2100": 50.00,
+    "3000": 50.00,
+    "3100": 0.00,
+    "4000": 51.00,
+    "5000": 25.00,
+    "6000": 3.00,
+    "6100": 2.00,
+    "6200": 4.00,
+    "6300": 4.00,
+    "6400": 5.00,
+    "6500": 2.00
+  },
+  "cash_flow_detail": {
+    "operating": [
+      { "description": "Cash sales Week 1",      "amount":  21.00 },
+      { "description": "Buy supplies Week 1",     "amount": -10.00 },
+      { "description": "Advertising sign",         "amount":  -2.00 },
+      { "description": "Wages paid",               "amount":  -3.00 },
+      { "description": "Cash sales Week 2",        "amount":  25.00 },
+      { "description": "Buy supplies Week 2",      "amount": -15.00 },
+      { "description": "Buy insurance",            "amount": -12.00 },
+      { "description": "Interest paid",            "amount":  -2.00 },
+      { "description": "Credit sale (no cash)",     "amount":   0.00 }
+    ],
+    "investing": [
+      { "description": "Buy lemonade stand",       "amount": -40.00 }
+    ],
+    "financing": [
+      { "description": "Owner investment",         "amount":  50.00 },
+      { "description": "Bank loan received",       "amount":  50.00 }
+    ]
+  }
+}

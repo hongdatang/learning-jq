@@ -1,0 +1,105 @@
+{
+  "business": "Lemonade Stand",
+  "summer": "2024",
+  "months": [
+    {
+      "period": "June 2024",
+      "income_statement": {
+        "revenue": 51.00,
+        "cogs": 25.00,
+        "gross_profit": 26.00,
+        "expenses": {
+          "wages": 3.00,
+          "advertising": 2.00,
+          "insurance": 4.00,
+          "depreciation": 4.00,
+          "bad_debt": 5.00,
+          "interest": 2.00
+        },
+        "total_expenses": 20.00,
+        "net_income": 6.00
+      },
+      "balance_sheet": {
+        "assets": {
+          "cash": 62.00,
+          "prepaid_insurance": 8.00,
+          "equipment": 40.00,
+          "accumulated_depreciation": -4.00
+        },
+        "total_assets": 106.00,
+        "liabilities": {
+          "notes_payable": 50.00
+        },
+        "total_liabilities": 50.00,
+        "equity": {
+          "owners_equity": 50.00,
+          "retained_earnings": 6.00
+        },
+        "total_equity": 56.00
+      }
+    },
+    {
+      "period": "July 2024",
+      "income_statement": {
+        "revenue": 85.00,
+        "cogs": 40.00,
+        "gross_profit": 45.00,
+        "expenses": {
+          "wages": 4.00,
+          "insurance": 4.00,
+          "depreciation": 4.00
+        },
+        "total_expenses": 12.00,
+        "net_income": 33.00
+      },
+      "balance_sheet": {
+        "assets": {
+          "cash": 83.00,
+          "prepaid_insurance": 4.00,
+          "equipment": 40.00,
+          "accumulated_depreciation": -8.00
+        },
+        "total_assets": 119.00,
+        "liabilities": {
+          "notes_payable": 30.00
+        },
+        "total_liabilities": 30.00,
+        "equity": {
+          "owners_equity": 50.00,
+          "retained_earnings": 39.00
+        },
+        "total_equity": 89.00
+      }
+    },
+    {
+      "period": "August 2024",
+      "income_statement": {
+        "revenue": 120.00,
+        "cogs": 55.00,
+        "gross_profit": 65.00,
+        "expenses": {
+          "wages": 4.00,
+          "insurance": 4.00,
+          "depreciation": 4.00
+        },
+        "total_expenses": 12.00,
+        "net_income": 53.00
+      },
+      "balance_sheet": {
+        "assets": {
+          "cash": 114.00,
+          "equipment": 40.00,
+          "accumulated_depreciation": -12.00
+        },
+        "total_assets": 142.00,
+        "liabilities": {},
+        "total_liabilities": 0.00,
+        "equity": {
+          "owners_equity": 50.00,
+          "retained_earnings": 92.00
+        },
+        "total_equity": 142.00
+      }
+    }
+  ]
+}

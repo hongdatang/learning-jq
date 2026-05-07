@@ -1,0 +1,17 @@
+{
+  "starting_balance_sheet": {
+    "assets": { "cash": 56.00 },
+    "liabilities": {},
+    "owners_equity": { "invested_capital": 50.00, "retained_earnings": 6.00 }
+  },
+  "transactions": [
+    { "id": 1, "date": "2024-06-08", "description": "Bank loan",             "entries": [{"account": "cash", "change": 50},  {"account": "notes_payable", "change": 50}] },
+    { "id": 2, "date": "2024-06-08", "description": "Buy lemonade stand",     "entries": [{"account": "cash", "change": -40}, {"account": "equipment", "change": 40}] },
+    { "id": 3, "date": "2024-06-09", "description": "Buy insurance (3 months)", "entries": [{"account": "cash", "change": -12}, {"account": "prepaid_insurance", "change": 12}] },
+    { "id": 4, "date": "2024-06-09", "description": "Buy supplies",           "entries": [{"account": "cash", "change": -15}, {"account": "inventory", "change": 15}] },
+    { "id": 5, "date": "2024-06-10", "description": "Cash sales (25 cups)",   "entries": [{"account": "cash", "change": 25},  {"account": "revenue", "change": 25}] },
+    { "id": 6, "date": "2024-06-11", "description": "Credit sale to neighbor", "entries": [{"account": "accounts_receivable", "change": 5}, {"account": "revenue", "change": 5}] },
+    { "id": 7, "date": "2024-06-11", "description": "Record COGS",            "entries": [{"account": "cogs", "change": 15},  {"account": "inventory", "change": -15}] },
+    { "id": 8, "date": "2024-06-12", "description": "Pay interest on loan",   "entries": [{"account": "cash", "change": -2},  {"account": "interest_expense", "change": 2}] }
+  ]
+}

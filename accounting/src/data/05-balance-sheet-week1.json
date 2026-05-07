@@ -1,0 +1,17 @@
+{
+  "period": "Week 1",
+  "date": "2024-06-05",
+  "accounts": {
+    "cash":              { "code": "1000", "type": "asset",   "balance": 57.00 },
+    "inventory":         { "code": "1200", "type": "asset",   "balance": 0.00 },
+    "owners_equity":     { "code": "3000", "type": "equity",  "balance": 50.00 },
+    "retained_earnings": { "code": "3100", "type": "equity",  "balance": 7.00 }
+  },
+  "income_summary": {
+    "revenue": 22.00,
+    "cogs": 10.00,
+    "wages": 3.00,
+    "advertising": 2.00,
+    "net_income": 7.00
+  }
+}
